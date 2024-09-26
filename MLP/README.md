@@ -6,7 +6,6 @@ This repository contains the implementation of a **Multi-Layer Perceptron (MLP)*
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Implementation Details](#implementation-details)
-- [Activation Functions](#activation-functions)
 - [Optimization](#optimization)
 - [Evaluation Metrics](#evaluation-metrics)
 - [Usage](#usage)
@@ -52,9 +51,6 @@ The performance of the models is evaluated using the following metrics:
 
 - **Accuracy**: The proportion of correctly classified images.
 - **Loss**: Cross-entropy loss is used as the loss function:
-  \[
-  J(W) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]
-  \]
 - **Comparison with CNN**: As part of the experiments, a CNN built using TensorFlow is trained on the same dataset and compared with the MLP in terms of accuracy and speed.
 
 ## Usage
