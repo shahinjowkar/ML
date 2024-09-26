@@ -29,11 +29,6 @@ The MLP is implemented from scratch without the use of machine learning librarie
 - **Hidden Layers**: Experiments are conducted with 1 and 2 hidden layers, with {32, 64, 128, 256} hidden units.
 - **Output Layer**: 26 output units corresponding to the 26 letters in the Sign Language alphabet.
 
-### 1. Forward Pass
-- Linear transformation is applied at each layer: 
-  Where:
-  - \( z^{[l]} \) is the linear activation of layer \( l \)
-  - \( W^{[l]} \) are the weights, and \( b^{[l]} \) are the biases for layer \( l \)
 
 ### 2. Activation Functions
 Three types of activation functions were used and compared:
