@@ -31,9 +31,6 @@ The MLP is implemented from scratch without the use of machine learning librarie
 
 ### 1. Forward Pass
 - Linear transformation is applied at each layer: 
-  \[
-  z^{[l]} = W^{[l]} \cdot a^{[l-1]} + b^{[l]}
-  \]
   Where:
   - \( z^{[l]} \) is the linear activation of layer \( l \)
   - \( W^{[l]} \) are the weights, and \( b^{[l]} \) are the biases for layer \( l \)
@@ -41,21 +38,12 @@ The MLP is implemented from scratch without the use of machine learning librarie
 ### 2. Activation Functions
 Three types of activation functions were used and compared:
 - **ReLU** (Rectified Linear Unit): 
-  \[
-  f(z) = \max(0, z)
-  \]
   - Used for most hidden layers due to its effectiveness in deep learning.
   
 - **Leaky ReLU**: 
-  \[
-  f(z) = \max(0.01z, z)
-  \]
   - Used to address the "dying ReLU" problem by allowing a small, non-zero gradient when \( z \) is negative.
 
 - **Sigmoid**: 
-  \[
-  f(z) = \frac{1}{1 + e^{-z}}
-  \]
   - Traditionally used for binary classification, included in this project for experimentation in multi-class settings.
 
 
