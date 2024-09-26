@@ -58,19 +58,7 @@ Three types of activation functions were used and compared:
   \]
   - Traditionally used for binary classification, included in this project for experimentation in multi-class settings.
 
-### 3. Backpropagation
-- **Gradient Descent**: Backpropagation is performed using **mini-batch gradient descent** to update the weights.
-  \[
-  W^{[l]} = W^{[l]} - \alpha \cdot \frac{\partial J}{\partial W^{[l]}}
-  \]
-  - Where \( \alpha \) is the learning rate and \( \frac{\partial J}{\partial W^{[l]}} \) is the gradient of the loss function with respect to the weights.
 
-### 4. Regularization
-- **L2 Regularization**: Applied to prevent overfitting by penalizing large weights.
-  \[
-  \lambda \sum_{l=1}^{L} ||W^{[l]}||_2^2
-  \]
-  - Where \( \lambda \) is the regularization parameter.
 
 ## Optimization
 - **Mini-batch Gradient Descent**: The training process is optimized using mini-batches, which helps improve convergence speed and reduce memory usage.
@@ -113,5 +101,3 @@ Plots for training and test accuracy, as well as loss curves, are available in t
 
 ## References
 - **Sign Language MNIST Dataset**: [Kaggle](https://www.kaggle.com/datamunge/sign-language-mnist/data)
-- **Neural Network Basics**: [CS231n](https://cs231n.github.io/neural-networks-2/)
-- **Scipy Gradient Check**: [Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.check_grad.html)
